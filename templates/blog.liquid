@@ -1,0 +1,15 @@
+<h1> {{ blog.title }}</h1>
+
+
+{% for article in blog.articles %}
+    {{- article.title | link_to: article.url }}
+
+    <div>
+        <a href="{{ article.url }}">
+            <h2>{{ article.title }}</h2>
+        </a>
+        {{- article.author }}
+        {{- article.created_at }}
+        <div>{{ article.excerpt_or_content }}</div>
+    </div>
+{% endfor %}
