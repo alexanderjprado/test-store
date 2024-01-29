@@ -1,1 +1,27 @@
-a
+<h1>Collections</h1>
+
+{% paginate collections by 4 %}
+    {% for collection in collections %}
+        <div>
+            <a href='{{ collection.url }}'>
+                <h2>{{ collection.title }}</h2>
+                {% if collection.image %}
+                    <img src={{ collection.image | image_url | image_tag: collection.image.alt }}
+                    width="450"
+                    height="450"
+                    alt="image collection"
+                    loading="eager" />
+                {% else %}
+                    <img src={{ collection.products.first.image | image_url: width: 450, height: 450 | image_tag: alt }}
+                    width="450"
+                    height="450"
+                    alt="image collection"
+                    loading="eager" />
+                    {% assign alt = collection.title | escape %}
+                {% endif %}
+            </a>
+        </div>
+    {% endfor %}
+    <hr />
+    {{ paginate | default_pagination }}
+{% endpaginate %}
