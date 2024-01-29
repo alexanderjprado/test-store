@@ -1,6 +1,6 @@
 [
   {
-    "name": "theme_new",
+    "name": "theme_info",
     "theme_name": "Testing",
     "theme_author": "Alexander",
     "theme_version": "1.0.0",
@@ -14,15 +14,13 @@
         "type": "color_background",
         "id": "bg",
         "label": "Background color",
-        "default": "ffffff",
-        "info": ""
+        "default": "ffffff"
         },
         {
           "type": "color_background",
           "id": "text_color",
           "label": "Text color",
-          "default": "000000",
-          "info": ""
+          "default": "000000"
         }
     ]
   },
@@ -33,7 +31,7 @@
         "type": "checkbox",
         "id": "show_search",
         "label": "Show search form?",
-        "default": "true"
+        "default": true
         }
     ]
   }
