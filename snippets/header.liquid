@@ -8,12 +8,13 @@
             </li>
         {%- endfor %}
     </ul>
-
-    <form action="{{ routes.search_url }}">
+    {% if settings.show_search %}
+        <form action="{{ routes.search_url }}">
         <input type="text"
         placeholder="Search"
         name="q"
         value="{{ search.terms | escape }}" />
         <input type="submit" value="Search">
     </form>
+    {% endif %}
 </header>
