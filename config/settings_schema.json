@@ -4,36 +4,35 @@
     "theme_name": "Testing Shopify Theme",
     "theme_author": "Alexander Prado",
     "theme_version": "1.0.0",
-    "theme_documentation_url": "https://github.com/alexanderjprado/test-store",
-    "theme_support_url": "https://github.com/alexanderjprado/test-store/issues"
+    "theme_documentation_url": "https:\/\/github.com\/alexanderjprado\/test-store",
+    "theme_support_url": "https:\/\/github.com\/alexanderjprado\/test-store\/issues"
   },
   {
     "name": "color",
     "settings": [
-        {
+      {
         "type": "color_background",
         "id": "bg",
         "label": "Background color",
         "default": "ffffff"
-        },
-        {
-          "type": "color_background",
-          "id": "text_color",
-          "label": "Text color",
-          "default": "000000"
-        }
+      },
+      {
+        "type": "color_background",
+        "id": "text_color",
+        "label": "Text color",
+        "default": "000000"
+      }
     ]
   },
   {
     "name": "settings",
     "settings": [
-        {
+      {
         "type": "checkbox",
         "id": "show_search",
         "label": "Show search form?",
         "default": true
-        }
+      }
     ]
   }
 ]
-
